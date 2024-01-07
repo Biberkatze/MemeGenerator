@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Meme Generator</title>
+</head>
+<body>
+    <div class="image-container">
+        <img class="meme-thumbnail" src="image1.jpg" alt="Bild1" onclick="editMeme('image1.jpg')">
+        <img class="meme-thumbnail" src="image2.jpg" alt="Bild2" onclick="editMeme('image2.jpg')">
+        <img class="meme-thumbnail" src="image3.jpg" alt="Bild3" onclick="editMeme('image3.jpg')">
+        <img class="meme-thumbnail" src="image4.jpg" alt="Bild4" onclick="editMeme('image4.jpg')">
+        <!--Hier werden die Bilder angezeigt-->
+    </div>
+
+    <div class="meme-container">
+        <div id="meme-overlay">
+            <img id="meme-image" src="" alt="Meme Image">
+            <p id="text-overlay"></p>
+        </div>
+        <textarea id="text-input" placeholder="Enter your text"></textarea>
+        <button onclick="generateMeme()">Generate Meme</button>
+    </div>
+<div class="color-selector">
+    <label for="color-black">
+        <input type="radio" id="color-black" name="color" value="black" onchange="changeColor('black')" checked>
+        Schwarz
+    </label>
+    <label for="color-white">
+        <input type="radio" id="color-white" name="color" value="white" onchange="changeColor('white')">
+        Weiß
+    </label>
+    <label for="color-red">
+        <input type="radio" id="color-red" name="color" value="red" onchange="changeColor('red')">
+        Rot
+    </label>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
