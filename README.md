@@ -11,7 +11,7 @@ Cedric Tuma
 
 ### 1.1 Ihr Projekt
 
-Ich habe mich dazu entschieden ein Projekt zu machen, bei welchem man normale Zahlen in Binär und hexadezimal umrechnen kann.
+Ich habe mich dazu entschieden ein Projekt zu machen, bei welchem man ein Meme erstellen kann.
 
 ### 1.2 User Stories
 
